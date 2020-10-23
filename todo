@@ -1,0 +1,5 @@
+create components
+    [x]galleryList
+    [x]galleryItem
+
+[]GET request from /gallery to app.js
