@@ -6,15 +6,11 @@ class GalleryList extends Component {
         console.log('in GalleryList');
         return (
             // <div className="imageWrapper">
-        <>
-            {this.props.galleryItems.map((image) => {
-                return <div><img src={image.path}/>
-                        </div>
-            })}
-                           
-                
-             
-             </>
+            <>
+                {this.props.galleryItems.map((image) => {
+                    return <div><img src={image.path}/></div>
+                })}
+            </>
         );
     }}
 

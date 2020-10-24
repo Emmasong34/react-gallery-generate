@@ -39,7 +39,7 @@ class App extends Component {
         <br/>
         <p>Gallery goes here</p>
         <GalleryList galleryItems={this.state.galleryItems} getImages={this.getImages}/>
-        <img src="images/bread.jpg"/>
+        {/* <img src="images/bread.jpg"/> */}
       </div>
     );
   }
