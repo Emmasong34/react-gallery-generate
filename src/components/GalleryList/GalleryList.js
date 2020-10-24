@@ -10,7 +10,7 @@ class GalleryList extends Component {
             <>
                 {this.props.galleryItems.map((image) => {
                     //  return <div><img src={image.path}/></div>
-                    return <GalleryItem image={image}/>
+                    return <GalleryItem image={image} getImages={this.props.getImages}/>
                     
                 })}
             </>
