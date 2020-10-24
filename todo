@@ -2,4 +2,8 @@ create components
     [x]galleryList
     [x]galleryItem
 
+gallery
+    [x]choose images and resize
+    [x]modify the gallery data
+
 []GET request from /gallery to app.js
