@@ -6,10 +6,10 @@ class GalleryList extends Component {
     render () {
         console.log('in GalleryList');
         return (
-            // <div className="imageWrapper">
             <>
+                {/* looping through galleryItems array */}
                 {this.props.galleryItems.map((image) => {
-                    //  return <div><img src={image.path}/></div>
+                    // sends information to GalleryItem component
                     return <GalleryItem image={image} getImages={this.props.getImages}/>
                     
                 })}

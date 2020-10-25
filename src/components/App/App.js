@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList';
-// import GalleryItem from './GalleryItem/GalleryItem';
+
 
 
 
@@ -12,7 +12,8 @@ class App extends Component {
   state = {
     galleryItems: []
     }
-
+  
+  //GET request
   getImages = () => {
     console.log('in getImages');
     axios ({
@@ -28,9 +29,7 @@ class App extends Component {
     });
   }
 
-
-
-
+  //appends to the DOM
   componentDidMount = () => {
     this.getImages();
   }
@@ -38,12 +37,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of my life</h1>
+          <h1 className="App-title">Loves of my Life</h1>
         </header>
         <br/>
-        <p>Gallery goes here</p>
+        {/* sends information to GalleryList component */}
         <GalleryList galleryItems={this.state.galleryItems} getImages={this.getImages}/>
-        {/* <img src="images/bread.jpg"/> */}
       </div>
     );
   }

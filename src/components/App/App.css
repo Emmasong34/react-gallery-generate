@@ -6,7 +6,8 @@
   background-color: #222;
   height: 70px;
   padding: 20px;
-  color: white;
+  color: #f5b507;
+  font-family: avant-garde;
 }
 
 .App-title {
@@ -23,9 +24,16 @@
 }
 
 .imageWrapper{
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 20px;
   width: 300px;
   margin: 10px auto;
-  /* display: inline-block; */
+  display: inline-block;
+  align-self: center;
+  background-color: #f5b507;
+  font-family: avant-garde;
+}
+
+.likeCounterDisplay{
+  font-family: avant-garde;
 }
